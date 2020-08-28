@@ -1,8 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import 'bootstrap/dist/css/bootstrap.css'
-import App from './components/App'
+import ReactDom from 'react-dom'
+import Card from './components/Card'
 
-const container = document.getElementById('root')
 
-ReactDOM.render(<App />, container)
+const container = document.getElementById('root');
+
+//ReactDom.render(QUE, DONDE);
+ReactDom.render( < Card / > , container);
