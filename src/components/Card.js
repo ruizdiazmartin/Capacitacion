@@ -4,26 +4,28 @@ import './styles/Card.css';
 import circlesImg from '../components/images/circles.png'
 import AddImage from '../components/images/add.png'
 
+
 class Card extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            image: AddImage
+            image: exerciseImg
         }
     }
 
     //Esta funcion se ejecuta inmediatemanete despues que un componente se implemente.
-    componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                image: exerciseImg
-            })
-        }, 5000);
-    }
+
+    /* componentDidMount() {
+         setTimeout(() => {
+             this.setState({
+                 image: AddImage
+             })
+         }, 5000);
+     }*/
 
     render() {
-        const { title, description, leftColor, rigthColor } = this.props
+        const { title, description, leftColor, rigthColor, img } = this.props
         return (
             <div className="card mx-auto Fitness-Card"
                 style={{
